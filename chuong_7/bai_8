@@ -1,0 +1,13 @@
+a = int(input("nhap so diem cua ban(0-100): "))
+if a >= 90:
+    print("ban la loai gioi") 
+elif a >= 75: 
+    print("ban la loai kha") 
+elif a >= 50: 
+    print("ban la loai trung binh") 
+else: 
+    print("ban la loai yeu")
+
+print("ket thuc chuong trinh")
+     
+     
