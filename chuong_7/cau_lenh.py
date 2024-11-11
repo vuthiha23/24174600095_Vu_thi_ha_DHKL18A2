@@ -1,64 +1,39 @@
-a =10
-if a > 20:
-    print("gia tri a tm")
-    b=a+1
-else:
-    print("gia tri a ko tm")
-print("ket thuc chuong trinh")
 
-a =10
-if a > 20:
-    print("gia tri a tm")
-    b=a+1
+a = int(input("nhap vao so nguyen duong a :  "))
+b = int(input("nhap vao so nguyen duong b : "))
+so_nho_nhat = a
+if b<=a:
+    so_nho_nhat = b
+k = so_nho_nhat     
+for i in range(so_nho_nhat):
+    if a % k == 0 and b % k == 0:
+        print(f"{k} la uoc chung lon nhat")
+        break 
+    k = k -1 
     
-print("ket thuc chuong trinh")
-
-a =0
-if a > 0:
-    print("a la so duong")
-elif a<0:
-    print("a la so am")
+    
+n = int(input("nhap so nguyen duong can kiem tra :"))
+if n<= 1:
+    print("so nay khong phai la so nguyen to")
 else:
-    print("a la so 0")
-print("ket thuc chuong trinh") 
-
-for abc in range(10):
-    print(abc) 
+    k = n 
+    for i in range(n):
+        if n % k == 0 and k != n and k != 1:
+            print("so nay khong phai la so nguyen to")
+            break
+        k = k - 1
+    else:
+        print("so nay la so nguyen to")
+        
+        
+        
+        
+n = 10        
+while n > 2: #true
+    print("chay vong lap")
     
-n = int(input("nhap vao so nguyen duong n: "))
-for i in range(n):
-    if i%2 == 1:
-        print(i)             
-        
-        
-        
-a = 0
-b = 1
-n = int(input("nhap vao so nguyen duong n: "))
-for i in range(n):
-    print(a)
-    sum_a_b = a + b
-    a = b 
-    b = sum_a_b
     
-for i in range(10):
-    if i == 4:
-        break
-    print(i)
-else:
-    print("chay cau lenh else")    
-        
-for i in range(10):
-    if i == 4:
-        continue
-    print(i) 
     
-  # break (dừng) continue (bỏ qua)   
-  
-  
-  
-  
-  
 # print("Hello world")
 
 a = "Hello world"
@@ -167,4 +142,4 @@ a_sua = a.replace("l","w")
 # - biến đổi viết hoa viết thường
 a_sua = a.upper()
 a_sua = a.lower()
-a_sua = a.capitalize()        
+a_sua = a.capitalize()                               
