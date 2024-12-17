@@ -4,4 +4,4 @@ def uoc_cua_mot_so_nguyen(n):
         if n % i == 0:
             so.append(i)
     return so
-print(uoc_cua_mot_so_nguyen(10))        
+print(uoc_cua_mot_so_nguyen(10))    
